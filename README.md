@@ -11,10 +11,10 @@ Problem is existing for running "sleuth_live",  ("sleuth"-0.30.0 and "kallisto"-
 
         so <- sleuth_prep(s2c, ~condition, target_mapping = t2g_sleuth, aggregation_column = 'ens_gene',
         extra_bootstrap_summary = T, read_bootstrap_tpm = T, pval_aggregate = F)
-        so <- sleuth_fit(so) <br>
+        so <- sleuth_fit(so)
         so <- sleuth_wt(so, which_beta= 'conditionYolkSac')  
         models(so)  
-        results_sleuth <- sleuth_results(so, 'conditionYolkSac', pval_aggregate = F) <br>
+        results_sleuth <- sleuth_results(so, 'conditionYolkSac', pval_aggregate = F) 
 The shiny window when you try to get MA plot, the error messge is <br>
 
                   Error: object 'b' can not find
